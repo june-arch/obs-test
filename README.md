@@ -1,7 +1,8 @@
-# Mantine Next.js template
+# Installation
 
-This is a template for [Next.js](https://nextjs.org/) app router + [Mantine](https://mantine.dev/).
-If you want to use pages router instead, see [next-pages-template](https://github.com/mantinedev/next-pages-template).
+To install the project dependencies, make sure you have Node.js v20.9.0 installed. Then, run the following command:
+
+- `npm run install`
 
 ## Features
 
@@ -29,9 +30,3 @@ This template comes with the following features:
 - `jest` – runs jest tests
 - `jest:watch` – starts jest watch
 - `test` – runs `jest`, `prettier:check`, `lint` and `typecheck` scripts
-
-### Other scripts
-
-- `storybook` – starts storybook dev server
-- `storybook:build` – build production storybook bundle to `storybook-static`
-- `prettier:write` – formats all files with Prettier
