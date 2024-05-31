@@ -8,7 +8,6 @@ import {
   Card,
   Container,
   Group,
-  Text,
   TextInput,
   rem,
 } from '@mantine/core';
@@ -30,25 +29,17 @@ function UserDetail({ params }: PropsParam) {
     { title: 'Pages', href: '/' },
     { title: 'Detail', href: '#' },
   ].map((item, index) => (
-    <Anchor href={item.href} key={index} c="white" fw={200} fz={14}>
+    <Anchor href={item.href} key={index}>
       {item.title}
     </Anchor>
   ));
 
   return (
     <Container>
-      <Breadcrumbs
-        mt="xl"
-        px={0}
-        separator={
-          <Text c="white" fz={14} fw={200}>
-            /
-          </Text>
-        }
-      >
+      <Breadcrumbs mt="xl" px={0} separator="→" separatorMargin="md">
         {items}
       </Breadcrumbs>
-      <Card my="xl">
+      <Card my="xl" radius="lg" shadow="md" withBorder>
         <Avatar src={user.image} size={rem(180)} mx="auto" />
         <TextInput label="Image" value={user.image} disabled />
         <TextInput label="Name" value={user.name} disabled />
