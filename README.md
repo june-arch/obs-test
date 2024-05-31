@@ -4,6 +4,10 @@ To install the project dependencies, make sure you have Node.js v20.9.0 installe
 
 - `npm run install`
 
+dont forget to setup baseurl api using 
+https://my-json-server.typicode.com/june-arch/json
+
+
 ## Features
 
 This template comes with the following features:
